@@ -1,28 +1,30 @@
 
 import React from "react"
-import {createdata} from '../../components/data/index'
+import { createdata } from '../../components/data/index'
+import { LazyImage } from "../../components/TheImage"
 
 export const Experience = () => {
 
 
-  
+
 
 
     return (
         <div className="width flexwrap flex justify-content">
             <div className="box padding ">
                 <div className='SizeImage'>
-                    <img
-                        src={createdata.image}
+                    <LazyImage
+                        image={createdata.image}
                         width='100%'
-                        className='border-radius whitebackground heightImage'
+                        alt='the Experience'
 
                     />
+
                 </div>
             </div>
 
             <div className="box padding flex flex-column content align-items">
-                <h1 className='title font-family-title screencolor text-transform' >{createdata.title}</h1>
+                <h2 className='title font-family-title screencolor text-transform' >{createdata.title}</h2>
 
 
                 <div className='margin-top'>
@@ -35,12 +37,15 @@ export const Experience = () => {
                     {createdata.text.map((item, index) => (
 
                         <div className="flex flex-column align-items box" key={index}>
-                            <img
-                                src={item.image}
+                            <LazyImage
+                                image={item.image}
                                 width='100px'
                                 height='100px'
+                                alt=''
+
                             />
-                            <h1 className="name font-family-title screencolor text-transform">{item.title}</h1>
+
+                            <h2 className="name font-family-title screencolor text-transform">{item.title}</h2>
                             <div className="">
                                 <p className='white des font-family-des ext-align text-transform'>
                                     {item.des}
@@ -53,10 +58,10 @@ export const Experience = () => {
                 </div>
 
                 <div className="backgroundscreen padding border-radiusscreen margin-top  cursor opacity">
-                        <span className='white des font-family-des ext-align text-transform ' >
-                            {createdata.buttom}
-                        </span>
-                    </div>
+                    <span className='whitecolor des font-family-des ext-align text-transform ' >
+                        {createdata.buttom}
+                    </span>
+                </div>
 
             </div>
         </div>

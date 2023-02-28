@@ -32,8 +32,8 @@ type ExperTypes = {
     name?: string,
     title?: string,
     des?: string,
-    buttom?: string
-
+    buttom?: string,
+    input?: string
 }
 interface Experience {
     image: string,
@@ -125,4 +125,59 @@ export let TheBlog: BlogTypes = {
         }
     ]
 
+}
+type Ultype = {
+    _id: number,
+    name: string,
+    link: string
+}
+interface datatype {
+    title: string,
+    icon: string,
+    Listnavbar: Ultype[]
+}
+
+// nav bar 
+export let NavBardata: datatype = {
+    title: 'fitness',
+    icon: UrlImage.Iconfitness,
+    Listnavbar: [
+        {
+            _id: 5,
+            name: 'home',
+            link: '#home',
+        },
+        {
+            _id: 1,
+            name: 'blog',
+            link: '#blog',
+        },
+        {
+            _id: 2,
+            name: 'trainers',
+            link: '#trainers',
+        },
+        {
+            _id: 3,
+            name: 'experience',
+            link: '#experience',
+        },
+        {
+            _id: 4,
+            name: 'subscribe',
+            link: '#subscribe',
+        },
+       
+    ]
+}
+
+
+
+// TheSubscribe
+export let TheSubscribe: ExperTypes = {
+    title: 'Subscribe Our Newsletter',
+    des: 'Subscribe and get Our latest article in your inbox',
+    image: UrlImage.big,
+    input: 'your email',
+    buttom: 'Subscribe'
 }

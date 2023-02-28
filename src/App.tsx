@@ -1,6 +1,5 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Home } from './Screen/Home/index'
-import './css/index.css'
 import { NavBar } from "./Screen/NavBar"
 import { Footer } from "./Screen/footer"
 
@@ -9,11 +8,12 @@ const App = () => {
 
 
      return (
-          <>
-              <Footer   />
+          <Fragment>
                <NavBar />
                <Home />
-          </>)
+               <Footer />
+          </Fragment>
+     )
 }
 
 export default App

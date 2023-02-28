@@ -1,19 +1,15 @@
 
 import React from "react"
 interface buttomtype {
-    title?: string,
-    classname?: string
+    Title?: string,
+    Classname?: string
 }
 
 export const TheButtom = (props: buttomtype) => {
-    const { title, classname } = props
+    const { Title, Classname } = props
 
 
     return (
-        <div >
-            <button className={classname} >
-                {title}
-            </button>
-        </div>
+        <button className={Classname} >{Title}</button>
     )
 }

@@ -10,30 +10,25 @@ import { Trainers } from './Trainers'
 export const Home = () => {
 
     return (
-        <div className=''>
+        <div >
 
-
-          
-
-
-
-            <div className='padding'>
+            <div className='padding' id='home'>
                 <SliderImage />
             </div>
-
-            <div className=''>
-                <Subscribe />
+        
+            <div id='subscribe'>
+            <Subscribe />
             </div>
 
-            <div className='margin-top padding'>
+            <div className='margin-top padding' id='experience'>
                 <Experience />
             </div>
 
-            <div className='padding'>
+            <div className='padding' id='trainers'>
                 <Trainers />
             </div>
 
-            <div className='padding'>
+            <div className='padding' id='blog'>
                 <OurBlog />
             </div>
 
